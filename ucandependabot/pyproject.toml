@@ -1,0 +1,19 @@
+[project]
+name = "ucandependabot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "rishabhBudhouliya", email = "rb5727@nyu.edu" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "httpx>=0.28.1",
+]
+
+[project.scripts]
+ucandependabot = "ucandependabot:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
